@@ -1,0 +1,32 @@
+
+.card {
+    box-shadow: 3px 6px 13px 0px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: contain;
+}
+
+.character-info {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.3s ease;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.character-info:hover {
+    background-color: rgba(0, 0, 0, 0.266);
+    color: black;
+    cursor: pointer;
+}

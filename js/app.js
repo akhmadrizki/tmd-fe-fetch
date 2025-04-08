@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const response = await fetch(url);
             const data = await response.json();
 
-            // console.log(data);
+            console.log(data);
 
             // Access character from data api
             const characters = Array.isArray(data.items)
