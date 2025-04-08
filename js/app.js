@@ -26,21 +26,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
             characters.forEach((character) => {
                 const cardElement = characterCardTemplate.content.cloneNode(true);
-
-                // set image
+            
+                // Set link with character ID
+                const linkElement = cardElement.querySelector(".character-link");
+                linkElement.href = `detail.html?id=${character.id}`;
+            
+                // Set image
                 const imageElement = cardElement.querySelector(".character-image");
                 imageElement.src = character.image;
                 imageElement.alt = character.name;
-
-                // set name
+            
+                // Set name
                 const nameElement = cardElement.querySelector(".character-name");
                 nameElement.textContent = character.name;
-
-                // set race
+            
+                // Set race
                 const raceElement = cardElement.querySelector(".character-race");
                 raceElement.textContent = `Race: ${character.race}`;
-
-                // append to container
+            
+                // Append to container
                 charactersContainer.appendChild(cardElement);
             });
 
